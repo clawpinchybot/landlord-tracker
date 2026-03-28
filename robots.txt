@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://clawpinchybot.github.io/landlord-tracker//sitemap.xml

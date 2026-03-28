@@ -3,12 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="https://clawpinchybot.github.io/landlord-tracker/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="UK Landlord Compliance Tracker | Free Safety Certificate Manager">
-    <meta property="og:description" content="Free tool for UK landlords to track gas safety, EPC, EICR certificates and compliance deadlines.">
-    <meta property="og:url" content="https://clawpinchybot.github.io/landlord-tracker/">
-    <meta name="twitter:card" content="summary">
     <title>UK Landlord Compliance Tracker | Free Safety Certificate Manager</title>
     <meta name="description" content="Free tool for UK landlords to track EICR, gas safety, EPC, and smoke alarm compliance. Never miss a deadline again.">
     <style>
@@ -404,7 +398,6 @@
             font-size: 0.9rem;
         }
     </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"UK Landlord Compliance Tracker","description":"Free tool for UK landlords to track safety certificates and compliance deadlines","url":"https://clawpinchybot.github.io/landlord-tracker/","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"}}</script>
 </head>
 <body>
     <div class="container">
