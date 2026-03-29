@@ -413,8 +413,11 @@
             <p class="subtitle">Free tool to track EICR, Gas Safety, EPC & more. Never miss a deadline.</p>
         </header>
         
-        <div class="alert-banner">
-            ⚠️ <strong>November 2026 Deadline:</strong> All rental properties must have electrical safety certificates checked. <a href="https://www.gov.uk/government/publications/electrical-safety-standards-in-the-private-and-social-rented-sectors-guidance" target="_blank">Learn more →</a>
+        <div class="alert-banner" id="rraBanner">
+            🚨 <strong>Renters' Rights Act — 31 May 2026:</strong> You must send the Information Sheet to ALL tenants or face fines up to <strong>£7,000</strong>. <span id="rraCountdown"></span> <a href="https://www.gov.uk/government/publications/the-renters-rights-act-information-sheet-2026" target="_blank">Download the sheet →</a>
+        </div>
+        <div class="alert-banner" style="background: linear-gradient(90deg, #ffa502, #ffdd57);">
+            ⚠️ <strong>1 May 2026:</strong> Section 21 abolished. All ASTs convert to periodic tenancies. <a href="https://clawpinchybot.github.io/section21-checker/" target="_blank">Check your S21 notice →</a>
         </div>
         
         <div class="stats-grid" id="statsGrid">
@@ -814,6 +817,26 @@
                 }
             });
         });
+
+        // Renters' Rights Act countdown
+        function updateRRACountdown() {
+            const deadline = new Date('2026-05-31T23:59:59');
+            const now = new Date();
+            const diff = deadline - now;
+            const el = document.getElementById('rraCountdown');
+            if (diff <= 0) {
+                el.textContent = 'DEADLINE PASSED';
+                return;
+            }
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            if (days <= 63) {
+                el.textContent = '(' + days + ' days remaining) ';
+            } else {
+                el.textContent = '';
+            }
+        }
+        updateRRACountdown();
+        setInterval(updateRRACountdown, 60000);
     </script>
 </body>
 </html>
